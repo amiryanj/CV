@@ -28,7 +28,7 @@
 
 \address{{\bf Contact} \\ 
 Mobile: +33 6 32 38 50 50\\
-mail: amiryanj@ce.sharif.edu \\
+%mail: amiryanj@ce.sharif.edu \\
 mail: javad.amirian@inria.fr \\
 http://\url{http://people.rennes.inria.fr/Javad.Amirian/} } % Your address 2
 
@@ -72,27 +72,32 @@ GPA: 18.00/20
 \vspace{-8pt} % Negative space between title and text
  
 
-\section{\centerline{Graduate Courses}}
-\vspace{8pt} % Gap between title and text
-Machine Learning, Statistical Pattern Recognition, Computational Intelligence, Image Processing, Planning in Artificial Intelligence, Speech Processing, Stochastic Processes.
+%\section{\centerline{Graduate Courses}}
+%\vspace{8pt} % Gap between title and text
+%Machine Learning, Statistical Pattern Recognition, Computational Intelligence, Image Processing, Planning in Artificial Intelligence, Speech Processing, Stochastic Processes.
 
 
 % Main Projects
 \section{\centerline{Professional Experience}}
 \vspace{-6pt} % Negative space between title and text
 
-% describe small size project
-\paragraph{Team Leader @ \href{http://robocup.sbu.ac.ir}{Cyrus Robotics}}(Small-Size Soccer Team of Shahid Beheshti Univ.) \hfill 2010 - 2015\\
-%A team of 6 small mobile robots play soccer on a green carpeted field that is 9 m long by 6 m wide. Small Size robot soccer focuses on the problem of intelligent multi-agent cooperation and control in a highly dynamic environment with a hybrid centralized/distributed system. 
-Besides experiencing a professional team work management of seven graduate and undergraduate students, I heve been designing and developing electronic boards and embedded systems of the robots as electronic designer until 2012. During this period, a small wireless network was formed using Zigbee technology to enable communication between robots. Decision commands sent from Off-field computer were parsed and executed with ARM-based micro-controller that run a PI controller to  drive the robot wheels at a desired speed and trigger the kicker module.\\
-After 2012 I joined the software group and rewritten AI codes to c++. I developed the motion planning module based on an idea in my MSc thesis. We also introduced an approach to improve the robot movements and compensating inaccuracies in robot building using a Takegi-Sugeno fuzzy method.
-In 2014 we implemented a speech recognition system to convert human voice signals into robot commands in order to facilitate robot learning.
+\paragraph{Research and Develop @ {CrowdBot}}(European H2020 Research Project) \hfill 2018 - 2021\\
+CrowdBot is a H2020 European project, aiming to develop platforms and algorithms to ensure safe navigation of social robots.
+My main task is to develop tools for "Trajectory Prediction" of the agents around the robot, in order to improve the robot navigation in crowded environments. For that, I'm working with Crowd Simulation algorithms and developing Deep Generative models.
 
-\paragraph{Computer Vision Expert @ Sepehr Etelaat Co.} (Related to Sharif Univ.) \hfill May 2015 - present\\
-Sepehr is a computer vision based company that develop solutions in sport analysis. My job is developing image processing and vision algorithms and providing high-level API for UI programmers. My current project is a software for adding virtual advertisement to sport videos. A main processing step in this system is to estimate camera calibration based on corresponding points in soccer pitch. The vision engine has several processing modules including camera position estimation, camera pose exhaustive search for initializing pose tracker, shot boundary detection, Levenberg–Marquardt Based Optimizer and etc. Many AI techniques are utilized in this software such as GA, Kalman Smoothing, Optical Flow etc.
+\paragraph{Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}}  \hfill May 2015 - present\\
+PixBall is an AI startup providing smart solutions for sports analysis. My job is developing image processing and vision algorithms and providing high-level API for UI programmers. I contributed to PixArt, a software video processing solution for inserting graphical overlays and virtual advertisements into sports content.  One of the main challenges in such a system is to estimate camera calibration based on corresponding points in the soccer pitch. The vision engine is composed of several processing modules including the estimation of camera position, finding initial camera pose, using exhaustive search algorithms, shot boundary detection, tracking of camera calibration parameters, to which I contributed.
 
 \paragraph{Computer Vision Expert @ \href{http://www.spadsystem.com/}{Spad System Co.} } \hfill April 2016 - present\\
-Spadsystem is a startup software company that was founded in 2013. It specializes in accounting and management tools. Company started developing an automatic license plate recognition system for Iranian vehicles \href{http://didbaan.com}{(Didbaan)} and I joined the team in 2016 as a vision expert. My role is developing vision algorithms and also revising existing codes with OpenCV. I designed a tool for detecting moving objects using motion segmentation technique and also optimized an existing LBP descriptor to find the plates regions in the image. Furthermore I implemented a Persian OCR module using standard C++ libraries to extract the content of the plates.
+Spadsystem is a startup founded in 2013, specialized in traffic management solutions. In 2016, I joined the team to start a project for automatic recognition of Iranian license plates \href{http://didbaan.com}{(Didbaan)}. I developed a ALPR engined based on an open-source software (OpenALPR). This software has been in use to manage the entrance and exit of cars from parking in multiple sites.
+%I designed a tool for detecting moving objects using motion segmentation technique and also optimized an existing LBP descriptor to find the plates regions in the image. Furthermore I implemented a Persian OCR module using standard C++ libraries to extract the content of the plates.
+
+% describe small size project
+\paragraph{Co-Founder and Team Leader @ {Cyrus}}(Team of Small-Size Soccer Robots) \hfill 2010 - 2015\\
+%A team of 6 small mobile robots play soccer on a green carpeted field that is 9 m long by 6 m wide. Small Size robot soccer focuses on the problem of intelligent multi-agent cooperation and control in a highly dynamic environment with a hybrid centralized/distributed system. 
+I co-founded \textbf{Cyrus} under the supervision of Dr. Eslam Nazemi, during my undergrad study. I collaborated with more than 20 undergrad and graduate students that joined the team to develop hardware and software of the robots and prepare them for Robocup competitions. My main role was in the technical management of the project. Moreover,  I contributed to designing the electronic boards, programming the robot firmware, and latterly developing codes for motion planning and playing of the robots. As research results of the project, we presented a new approach to improve the robot movements and compensating inaccuracies in robot building using a Fuzzy approach. We also proposed a new motion-planning algorithm for the robots, that is able to adapt the navigation parameters by optimizing multiple objectives, simultaneously.
+
+
 
 
 %\section{\centerline{Work Experience}}
@@ -122,6 +127,9 @@ At Scientific Association of Electrical Engineering (Shahid Behshti University)
 
 \begin{itemize} \itemsep -1pt % Reduce space between items
 
+\item {\bf Amirian, J.}, Zhang, B., Valente Castro, F., Baldelomar, J., Hayet, J. B., Pettré, J. (2020, Dec). {\bf ''OpenTraj: Assessing Prediction Complexity in Human Trajectories Datasets.''} In Proceedings of the 15th Asian Conference on Computer Vision.
+
+
 \item {\bf Amirian, J.}, Van Toll, W., Hayet, J. B., Pettré, J. (2019, July). {\bf ''Data-Driven Crowd Simulation with Generative Adversarial Networks.''} In Proceedings of the 32nd International Conference on Computer Animation and Social Agents (pp. 7-10).
 
 \item {\bf Amirian, J.}, Hayet, J. B., Pettré, J., {\bf ''Social ways: Learning multi-modal distributions of pedestrian trajectories with GANs,''} IEEE Conference on Computer Vision and Pattern Recognition Workshops, 2019.
@@ -141,15 +149,16 @@ At Scientific Association of Electrical Engineering (Shahid Behshti University)
 \vspace{15pt}
 \begin{itemize} \itemsep -1pt
 
-\item {\bf OS:} Microsoft Windows; Linux (Ubuntu, Fedora, CentOS); Android.
-\item {\bf Office Tools:} \LaTeX; Libre Office; Microsoft Word, Excel, PowerPoint, Visio.
-\item {\bf Graphic Tools:} Adobe Photoshop, Adobe Premiere; 3ds Max.
+%\item {\bf OS:} Microsoft Windows; Linux (Ubuntu, Fedora, CentOS); Android.
+%\item {\bf Office Tools:} \LaTeX; Libre Office; Microsoft Word, Excel, PowerPoint, Visio.
+\item {\bf Programming Languages:} Python, C/C++, Matlab.
+\item {\bf Deep Learning Frameworks:} Pytorch, Keras (TensorFlow)
+\item {\bf Version Control:} Git.
+\item {\bf AI and Robotics Tools:} OpenCV, ROS.
 \item {\bf Software Design:} OOD; Concurrent and Multithread; Modular Programming.
-\item {\bf Programming Languages:} C/C++, Matlab, Python, Java.
-\item {\bf Database:} PostgreSQL, ODB (ORM).
-\item {\bf Version Control:} git.
-\item {\bf AI and Robotics Tools:} OpenCV, Image Processing Toolbox, Webots Simulator, Weka.
-\item {\bf Embedded Design:} ARM Processors (AT91, LPC), Atmel AVR Family, C51 Family; Altium Designer, Proteus, Protel.
+%\item {\bf Database:} PostgreSQL, ODB (ORM).
+\item {\bf Graphic Tools:} Adobe Photoshop, Adobe Premiere; 3ds Max.
+%\item {\bf Embedded Design:} ARM Processors (AT91, LPC), Atmel AVR Family, C51 Family; Altium Designer, Proteus, Protel.
 
 \end{itemize}
 
@@ -157,12 +166,12 @@ At Scientific Association of Electrical Engineering (Shahid Behshti University)
 
 \section{\centerline{Activities}}
 \begin{itemize}
-\item I love robots and robotic competitions, I have participated in many robotic events in fields of intelligent mouses and soccer robots.
-\item former member of technical committee (TC) of Small Size League at Robocup Iran Open. \href{http://2017.iranopen.ir/en-gb/leagues/robocupsoccer/smallsizerobotleague.aspx}{Link}.
+%\item I love robots and robotic competitions, I have participated in many robotic events in fields of intelligent mouses and soccer robots.
+\item Former member of technical committee (TC) of Small Size League at Robocup Iran Open. \href{http://2017.iranopen.ir/en-gb/leagues/robocupsoccer/smallsizerobotleague.aspx}{Link}.
 
-\item interested in football and fan of Perspolis club. Going to stadium and encouraging my favorite team is one of my most exciting entertainments.
+\item Interested in football and fan of Perspolis club. Going to stadium and encouraging my favorite team is one of my most exciting entertainments.
 
-\item doing Body-building, Hiking, playing Futsal, and also sport video games such as FIFA, PES and NFS!
+\item Interested in playing soccer, hiking, body-building.
 
 \end{itemize}
 
@@ -188,9 +197,9 @@ Email: jamzad@sharif.edu
 Department of Electrical and Computer Engineering, Shahid Beheshti University, Tehran , Iran\\
 Email: nazemi@sbu.ac.ir
 
-\item   {\bf \href{http://facultymembers.sbu.ac.ir/eshghi/}{Dr. Mohamad Eshghi} }\\
-Department of Electrical and Computer Engineering, Shahid Beheshti University, Tehran , Iran\\
-Email: m-eshghi@sbu.ac.ir
+%\item   {\bf \href{http://facultymembers.sbu.ac.ir/eshghi/}{Dr. Mohamad Eshghi} }\\
+%Department of Electrical and Computer Engineering, Shahid Beheshti University, Tehran , Iran\\
+%Email: m-eshghi@sbu.ac.ir
 
 \end{itemize}
 
