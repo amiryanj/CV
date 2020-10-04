@@ -4,6 +4,7 @@
 \usepackage{helvet}
 \usepackage{hyperref}
 \usepackage{bibentry}
+\usepackage{csquotes}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
@@ -30,8 +31,7 @@
 Mobile: +33 6 32 38 50 50\\
 %mail: amiryanj@ce.sharif.edu \\
 mail: javad.amirian@inria.fr \\
-http://\url{http://people.rennes.inria.fr/Javad.Amirian/} } % Your address 2
-
+\url{http://people.rennes.inria.fr/Javad.Amirian/} } % Your address 2
 
 \begin{resume}
 
@@ -47,25 +47,36 @@ http://\url{http://people.rennes.inria.fr/Javad.Amirian/} } % Your address 2
 
 \section{\centerline{Education}}
 \vspace{8pt} % Gap between title and text
-{\sl PhD Candidate}\\
-Inria, Rennes, France \hfill 2018-2021\\
-Title: Short-term Pedestrian Prediction for Robot Navigation in Crowded Space
+\textbf{\textit{PhD Candidate} in Robotics and Artificial Intelligence} \hfill Jan. 2018 - Now\\
+Inria Rennes (Rainbow Team), France \\
+Thesis: Short-term Pedestrian Motion Prediction for Robot Navigation in Crowd\\
+Supervisor: Dr. Julien Pettr\'e
 
+% ===================== Master =============================
+\textbf{\textit{MSc} in Computer Engineering (Artificial Intelligence)} \hfill Sept. 2012 - Sept. 2014\\ 
+Sharif University of Technology, Tehran, Iran (1st Rank University in Iran)\\
+Thesis: Dynamic Motion Planning and Obstacle Avoidance for Simulated SDV in Webots \\
+Supervisor: Dr. Mansour Jamzad\\
 
-{\sl Master of Science} in Computer Engineering (Artificial Intelligence) \\ 
-Sharif University of Technology, Tehran, Iran \hfill 2012 - 2014\\ 
-%THESIS - Job Evaluation: Dynamic Motion Planning and Obstacle Avoidance Simulation for Autonomous Robot-Car in Webots \\
+\vspace{-18pt}
+$\bullet$ \textbf{Graduate Courses}: Machine Learning, Statistical Pattern Recognition, Computational Intelligence, Image Processing, Planning in Artificial Intelligence, Speech Processing, Stochastic Processes.\\
 GPA: 16.66/20\\
-Ranked 11th in nationwide M.Sc. university entrance exam for Artificial Intelligence, Iran \hfill 2012
- 
-{\sl Bachelor of Science} in Electrical Engineering (Electronics) \\ 
-Shahid Behesti University (National University of Iran), Tehran, Iran \hfill 2007 - 2012\\
-GPA: 15.44/20\\
-Top 0.6\% nationwide entrance exam of Iranian Universities, among more than 300,000 participants. \hfill 2007
 
-{\sl Diploma} in Mathematics and Physics \\
-Tiz-Hooshan School (National Org for Development of Exceptional Talents), Kermanshah, Iran \hfill 2000 - 2007\\
-GPA: 18.00/20
+\vspace{-18pt}
+$\bullet$ Ranked \underline{11th} in nationwide M.Sc. university entrance exam for Artificial Intelligence, Iran \hfill 2012
+
+
+% =================== Bachelor ============================= 
+\textbf{\textit{BSc} in Electrical Engineering (Electronics)} \hfill Sept. 2007 - Sept. 2012\\ 
+Shahid Behesti University (National University of Iran), Tehran, Iran  \\
+GPA: 15.44/20\\
+
+\vspace{-18pt}
+$\bullet$ Top 0.6\% nationwide entrance exam of Iranian Universities among $\sim$300,000 participants. \hfill 2007
+
+%{\sl Diploma} in Mathematics and Physics \\
+%Tiz-Hooshan School (National Org for Development of Exceptional Talents), Kermanshah, Iran \hfill 2000 - 2007\\
+%GPA: 18.00/20
 
 
 %-----------------------------------------------------------
@@ -81,14 +92,14 @@ GPA: 18.00/20
 \section{\centerline{Professional Experience}}
 \vspace{-6pt} % Negative space between title and text
 
-\paragraph{Research and Develop @ {CrowdBot}}(European H2020 Research Project) \hfill 2018 - 2021\\
-CrowdBot is a H2020 European project, aiming to develop platforms and algorithms to ensure safe navigation of social robots.
-My main task is to develop tools for "Trajectory Prediction" of the agents around the robot, in order to improve the robot navigation in crowded environments. For that, I'm working with Crowd Simulation algorithms and developing Deep Generative models.
+\paragraph{Doctoral Researcher @ \href{http://crowdbot.eu} {CrowdBot}}(European H2020 Research Project) \hfill Jan. 2018 - Jun. 2021\\
+CrowdBot focuses on developing platforms and algorithms to ensure safe navigation of social robots.
+My main task is to develop tools for \textit{Motion Prediction} of pedestrians around the robot, to improve robot navigation in crowd. I'm working on Crowd Simulation algorithms and Deep Learning models. As a result I developed a model called \enquote{Social-Ways} that uses Generative Adversarial Networks (GAN) to take agent's observed trajectories and predict multi-modal distribution of their future trajectories.
 
-\paragraph{Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}}  \hfill May 2015 - present\\
-PixBall is an AI startup providing smart solutions for sports analysis. My job is developing image processing and vision algorithms and providing high-level API for UI programmers. I contributed to PixArt, a software video processing solution for inserting graphical overlays and virtual advertisements into sports content.  One of the main challenges in such a system is to estimate camera calibration based on corresponding points in the soccer pitch. The vision engine is composed of several processing modules including the estimation of camera position, finding initial camera pose, using exhaustive search algorithms, shot boundary detection, tracking of camera calibration parameters, to which I contributed.
+\paragraph{Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}}  \hfill May 2015 - Nov. 2018\\
+PixBall is an AI startup providing smart solutions for sports video analysis. My task was developing image processing and machine vision algorithms and providing high-level API for UI layers. I contributed to PixArt, a video processing software for embedding graphical overlays and virtual advertisements into sports contents. One of the most challenging parts was to estimate the camera calibration parameters in near real-time. In this process only rotation and intrinsic parameters need to be updated, since the camera location is usually fixed, during a game. We used Matlab symbolic toolbox to derive the tracking equations and convert it to C++ instructions. Then we used a Levenberg–Marquardt solver with a set of tracked keypoints to find the parameters.
 
-\paragraph{Computer Vision Expert @ \href{http://www.spadsystem.com/}{Spad System Co.} } \hfill April 2016 - present\\
+\paragraph{Computer Vision Engineer @ \href{http://www.spadsystem.com/}{Spad System Co.} } \hfill April 2016 - present\\
 Spadsystem is a startup founded in 2013, specialized in traffic management solutions. In 2016, I joined the team to start a project for automatic recognition of Iranian license plates \href{http://didbaan.com}{(Didbaan)}. I developed a ALPR engined based on an open-source software (OpenALPR). This software has been in use to manage the entrance and exit of cars from parking in multiple sites.
 %I designed a tool for detecting moving objects using motion segmentation technique and also optimized an existing LBP descriptor to find the plates regions in the image. Furthermore I implemented a Persian OCR module using standard C++ libraries to extract the content of the plates.
 
@@ -121,26 +132,27 @@ At Scientific Association of Electrical Engineering (Shahid Behshti University)
 
 
 
-\section{\centerline{Selected Publications}}
+\section{\centerline{Publications}}
 \vspace{15pt} % Gap between title and text
 %{\bf Conference Papers}\\
 
 \begin{itemize} \itemsep -1pt % Reduce space between items
+	
+\item {\bf Amirian, J.}, Zhang, B., Valente Castro, F., Baldelomar, J., Hayet, J. B., Pettré, J. {\bf ''OpenTraj: Assessing Prediction Complexity in Human Trajectories Datasets.''} In Proceedings of the 15th Asian Conference on Computer Vision (\textbf{ACCV}), Dec. 2020.
 
-\item {\bf Amirian, J.}, Zhang, B., Valente Castro, F., Baldelomar, J., Hayet, J. B., Pettré, J. (2020, Dec). {\bf ''OpenTraj: Assessing Prediction Complexity in Human Trajectories Datasets.''} In Proceedings of the 15th Asian Conference on Computer Vision.
+\item Zhang, B., \textbf{Amirian, J.} Eberle, H., Pettr\'e, J. Holloway, C., Carlson , T. \textbf{"Towards Safe Human-Robot Interactions in Crowds: Empirical Study of Pedestrian Dynamics with a Wheelchair and a Pepper Robot."} International Journal of Social Robotics (\textbf{IJSR}) - [Under review]
 
+\item {\bf Amirian, J.}, Van Toll, W., Hayet, J. B., Pettré, J. {\bf ''Data-Driven Crowd Simulation with Generative Adversarial Networks.''} In Proceedings of the 32nd International Conference on Computer Animation and Social Agents (\textbf{CASA'19}), Jul. 2019.
 
-\item {\bf Amirian, J.}, Van Toll, W., Hayet, J. B., Pettré, J. (2019, July). {\bf ''Data-Driven Crowd Simulation with Generative Adversarial Networks.''} In Proceedings of the 32nd International Conference on Computer Animation and Social Agents (pp. 7-10).
-
-\item {\bf Amirian, J.}, Hayet, J. B., Pettré, J., {\bf ''Social ways: Learning multi-modal distributions of pedestrian trajectories with GANs,''} IEEE Conference on Computer Vision and Pattern Recognition Workshops, 2019.
+\item {\bf Amirian, J.}, Hayet, J. B., Pettré, J., {\bf ''Social ways: Learning multi-modal distributions of pedestrian trajectories with GANs,''} IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}) Precognition Workshop, Jul. 2019.
 
 \item (TDP) {\bf Amiryan, J.}, Raeessi, S., Payandeh, P., Nadimi, B., Nouri, N., Kamali, M. R., Nazemi, E., {\bf ''CYRUS 2016 Team Description Paper,''} 2016.
 
-\item {\bf Amiryan, J.}, Jamzad, M., {\bf ''Adaptive motion planning with artificial potential fields using a prior path,''} Robotics and Mechatronics (ICROM), 2015 3rd RSI International Conference on, 2015.
+\item {\bf Amiryan, J.}, Jamzad, M., {\bf ''Adaptive motion planning with artificial potential fields using a prior path,''} 3rd RSI International Conference on Robotics and Mechatronics (\textbf{ICROM}), 2015.
 
-\item (MSc Thesis) {\bf Amiryan, J.}, {\bf ''Dynamic Motion Planning and Obstacle Avoidance Simulation for Autonomous Robot-car in Webots,''} MSc Thesis, Department of Computer Engineering, Sharif University of Technology, August 2014.
+%\item (MSc Thesis) {\bf Amiryan, J.}, {\bf ''Dynamic Motion Planning and Obstacle Avoidance Simulation for Autonomous Robot-car in Webots,''} \textbf{MSc Thesis}, Department of Computer Engineering, Sharif University of Technology, August 2014.
 
-\item Mazloum, J., Jalali, A., {\bf Amiryan, J.}, {\bf ''A novel bidirectional neural network for face recognition,''} Computer and Knowledge Engineering (ICCKE), 2012 2nd International eConference on. IEEE, 2012.
+\item Mazloum, J., Jalali, A., {\bf Amiryan, J.}, {\bf ''A novel bidirectional neural network for face recognition,''} 2nd International eConference on Computer and Knowledge Engineering (\textbf{ICCKE}), 2012.
 
 %\item (BSc Project Report) {\bf J. Amiryan,} J. Kamali, {\bf ''Automatic Traffic Control System With Police Robot,''} BSc. Thesis, Department of Electrical Engineering, Shahid Beheshti University, March 2012.
 \end{itemize}
