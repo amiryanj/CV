@@ -23,16 +23,17 @@
 %\section{\centerline{Contact Information}}
 
 %\address{{\bf Permanent Address} \\ \\  \\  % Your address 1
-\address{{\bf Address} \\ 154 Rue des Blains \\
-	 92220 Bagneux, Grand Paris, France } % Your address 1
+\address{{\bf Address} \\ 1 Rue Maurice Arnoux \\
+	 92120 Montrouge, Grand Paris, France } % Your address 1
 
 
 \address{{\bf Contact} \\ 
 Mobile: +33 6 32 38 50 50\\
 %mail: amiryanj@ce.sharif.edu \\
 Email: javad.amirian@inria.fr \\
-\url{https://linkedin.com/in/javad-amirian-68a3a584/} \\ % Your address 2
-\url{https://github.com/amiryanj} } % Your address 2
+%\url{https://linkedin.com/in/javad-amirian-68a3a584/} \\ % Your address 2
+%\url{https://github.com/amiryanj} 
+} % Your address 2
 
 \begin{resume}
 
@@ -41,40 +42,42 @@ Email: javad.amirian@inria.fr \\
 \vspace{8pt} % Gap between title and text
 
 \begin{itemize} \itemsep -1pt
-\item Computer / Robot Vision
+\item Robot Vision
 \item Deep Learning and Generative Models
 \item Crowd Simulation and Human Motion Prediction
 \end{itemize}
 
 \section{\centerline{Education}}
 \vspace{8pt} % Gap between title and text
-$\bullet$ \textbf{\textit{PhD Candidate} in Robotics and Artificial Intelligence} \hfill Jan. 2018 - Jul 2021\\
+$\bullet$ \textbf{{PhD} in Computer Science (Robotics and AI)} \hfill Jan. 2018 - Jul 2021\\
 Inria Rennes (Rainbow Team), France \\
 Thesis: Human Motion Trajectory Prediction for Robot Navigation (CrowdBot)\\
 Supervisor: Dr. Julien Pettr\'e \\
-Co-Supervisor: Dr. Jean-Bernard Hayet
+Co-Supervisor: Dr. Jean-Bernard Hayet \\
+%\hspace{8pt}
+%Jury: Dr. Alexandre Alahi (EPFL), Dr. Dinesh Manocha (University of Maryland), Dr. Nuria Pelechano (Polytechnic University of Catalonia), Dr. Frédéric Lerasle (Toulouse III), Dr. Eric Marchand (University of Rennes)
 
 % ===================== Master =============================
-$\bullet$ \textbf{\textit{MSc} in Computer Engineering (Artificial Intelligence)} \hfill Sept. 2012 - Sept. 2014\\ 
+$\bullet$ \textbf{{MSc} in Computer Engineering (Artificial Intelligence)} \hfill Sept. 2012 - Sept. 2014\\ 
 Sharif University of Technology, Tehran, Iran (1st Rank University in Iran)\\
 Thesis: Dynamic Motion Planning and Obstacle Avoidance for Simulated Autonomous Car in Webots \\
 Supervisor: Dr. Mansour Jamzad\\
-GPA: 16.66/20\\
+%GPA: 16.66/20\\
 
-\vspace{-18pt}
-\textit{Graduate Courses}: Machine Learning, Statistical Pattern Recognition, Computational Intelligence, Image Processing, Planning in Artificial Intelligence, Speech Processing, Stochastic Processes.\\
+%\vspace{-18pt}
+%\textit{Graduate Courses}: Machine Learning, Statistical Pattern Recognition, Computational Intelligence, Image Processing, Planning in Artificial Intelligence, Speech Processing, Stochastic Processes.\\
 
-\vspace{-18pt}
-* Ranked \underline{11th} in nationwide M.Sc. university entrance exam for Artificial Intelligence, Iran \hfill 2012
+%\vspace{-18pt}
+%* Ranked \underline{11th} in nationwide M.Sc. university entrance exam for Artificial Intelligence, Iran \hfill 2012
 
 
 % =================== Bachelor ============================= 
-$\bullet$ \textbf{\textit{BSc} in Electrical Engineering (Electronics)} \hfill Sept. 2007 - Sept. 2012\\ 
+$\bullet$ \textbf{{BSc} in Electrical Engineering (Electronics)} \hfill Sept. 2007 - Sept. 2012\\ 
 Shahid Behesti University (National University of Iran), Tehran, Iran  \\
-GPA: 15.44/20\\
+%GPA: 15.44/20\\
 
-\vspace{-18pt}
-* Top 0.6\% nationwide entrance exam of Iranian Universities among $\sim$300,000 participants. \hfill 2007
+%\vspace{-18pt}
+%* Top 0.6\% nationwide entrance exam of Iranian Universities among $\sim$300,000 participants. \hfill 2007
 
 %{\sl Diploma} in Mathematics and Physics \\
 %Tiz-Hooshan School (National Org for Development of Exceptional Talents), Kermanshah, Iran \hfill 2000 - 2007\\
@@ -94,56 +97,65 @@ GPA: 15.44/20\\
 \section{\centerline{Professional Experience}}
 \vspace{-6pt} % Negative space between title and text
 
+%\paragraph{CTO @ \href{http://decorar.ai} {DecorAR}} \hfill Apr. 2022 - Now\\
+%Vive Robotics is a tech startup that develops autonomous mobile robots. I am the CTO of the startup and the head of AI at Vive Tennis Robot project: an tennis-ball-retriever robot that uses computer vision and AI to localize itself, tennis balls and the players in the court. 
+
+
+\paragraph{Head of AI @ \href{http://vivetennis.com} {Vive Tennis}} \hfill Mar. 2021 - Now\\
+Vive Robotics is a tech startup that develops autonomous mobile robots. I am the CTO of the startup and the head of AI at Vive Tennis Robot project: an tennis-ball-retriever robot that uses computer vision and AI to localize itself, tennis balls and the players in the court. 
+
 \paragraph{Doctoral Researcher @ \href{http://crowdbot.eu} {CrowdBot}}(European H2020 Research Project) \hfill Jan. 2018 - Jul. 2021\\
 CrowdBot focuses on developing platforms and algorithms to ensure safe navigation of social robots.
 My main task is to develop tools for \textit{Motion Prediction} of pedestrians around the robot, to improve robot navigation in crowd. I'm working on Crowd Simulation algorithms and Deep Learning models. As a result I developed a model called \enquote{Social-Ways} that uses Generative Adversarial Networks (GAN) to take agent's observed trajectories and predict multi-modal distribution of their future trajectories.
 
-\paragraph{Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}}  \hfill May 2015 - Dec. 2017\\
-PixBall is an AI startup providing smart solutions for sports video analysis. My task was developing image processing and machine vision algorithms and providing high-level API for UI layers. I contributed to PixArt, a video processing software for embedding graphical overlays and virtual advertisements into sports contents. One of the most challenging parts was to estimate the camera calibration parameters in near real-time. In this process only rotation and intrinsic parameters need to be updated, since the camera location is usually fixed, during a game. We used Matlab symbolic toolbox to derive the tracking equations and convert it to C++ instructions. Then we used a Levenberg–Marquardt solver with a set of tracked keypoints to find the parameters.
+\paragraph{Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}} (Sepehr Co)  \hfill May 2015 - Dec. 2017\\
+PixBall is an AI startup providing smart solutions for sports video analysis. My task was developing image processing and machine vision algorithms and providing high-level API for the UI engineers. I contributed to PixArt, a video processing software for embedding graphical overlays and virtual advertisements into sports contents. % One of the most challenging parts was to estimate the camera calibration parameters in near real-time. In this process only rotation and intrinsic parameters need to be updated, since the camera location is usually fixed, during a game. We used Matlab symbolic toolbox to derive the tracking equations and convert it to C++ instructions. Then we used a Levenberg–Marquardt solver with a set of tracked keypoints to find the parameters.
 
 \paragraph{Computer Vision Engineer @ \href{http://www.spadsystem.com/}{Spad System Co.} } \hfill Apr. 2016 - Nov. 2017\\
 At Spad-system I started a project for automatic recognition of Iranian license plates \href{http://didbaan.com}{(Didbaan)}. I developed a ALPR engine based on an open-source software (OpenALPR). We collected and annotated +5k plate images and trained the system to detect plates and recognize Persian letters. This software has been in use to manage the entrance and exit of cars from parkings in multiple sites.
 %I designed a tool for detecting moving objects using motion segmentation technique and also optimized an existing LBP descriptor to find the plates regions in the image. Furthermore I implemented a Persian OCR module using standard C++ libraries to extract the content of the plates.
 
 % describe small size project
-\paragraph{Co-Founder and Team Leader @ {Cyrus}}(Team of Small-Size Soccer Robots) \hfill Jul. 2010 - Apr. 2015\\
+\paragraph{Founder and Team Leader @ {Cyrus}}(Team of Small-Size Soccer Robots) \hfill Jul. 2010 - Apr. 2015\\
 %A team of 6 small mobile robots play soccer on a green carpeted field that is 9 m long by 6 m wide. Small Size robot soccer focuses on the problem of intelligent multi-agent cooperation and control in a highly dynamic environment with a hybrid centralized/distributed system. 
-I co-founded \textbf{Cyrus} under the supervision of Dr. Eslam Nazemi, during my undergrad study. I collaborated with more than 20 undergrad and graduate students that joined the team to develop hardware and software of the robots and prepare them for Robocup competitions. My main role was in the technical management of the project. Moreover,  I contributed to designing the electronic boards, programming the robot firmware, and latterly developing codes for motion planning and playing of the robots. As research results of the project, we presented a new approach to improve the robot movements and compensating inaccuracies in robot building using a Fuzzy approach. We also proposed a new motion-planning algorithm for the robots, that is able to adapt the navigation parameters by optimizing multiple objectives, simultaneously.
+I founded \textbf{Cyrus} under the supervision of Dr. Eslam Nazemi, during my undergrad study. I collaborated with more than 20 undergrad and graduate students that joined the team to develop hardware and software of the robots and prepare them for Robocup competitions. My main role was in the technical management of the project. %Moreover,  I contributed to designing the electronic boards, programming the robot firmware, and latterly developing codes for motion planning and playing of the robots. As research results of the project, we presented a new approach to improve the robot movements and compensating inaccuracies in robot building using a Fuzzy approach. We also proposed a new motion-planning algorithm for the robots, that is able to adapt the navigation parameters by optimizing multiple objectives, simultaneously.
 
 
 
 
 %\section{\centerline{Work Experience}}
-\section{\centerline{Teaching Experience}}
-\vspace{15pt}
-\begin{itemize} \itemsep 1pt
+%\section{\centerline{Teaching Experience}}
+%\vspace{15pt}
+%\begin{itemize} \itemsep 1pt
 
-\item {\sl Teaching Assistant} of Numerical Optimization course \hfill Spring 2017\\
-Dr. S. Hamid Amiri (Shahid Rajaee University) 
+%\item {\sl Teaching Assistant} of Numerical Optimization course \hfill Spring 2017\\
+%Dr. S. Hamid Amiri (Shahid Rajaee University) 
 
-\item {\sl Teaching Assistant} of Machine Vision course (CE-40687) \hfill Spring 2014\\
-Dr. Mansour Jamzad (Sharif University of Technology)
+%\item {\sl Teaching Assistant} of Machine Vision course (CE-40687) \hfill Spring 2014\\
+%Dr. Mansour Jamzad (Sharif University of Technology)
 
-\item {\sl Teaching Assistant} of Digital Design course \hfill Spring 2010, Spring 2011\\
-Dr. Somayeh Timarchi (Shahid Beheshti University)
+%\item {\sl Teaching Assistant} of Digital Design course \hfill Spring 2010, Spring 2011\\
+%Dr. Somayeh Timarchi (Shahid Beheshti University)
 
-\item {\sl Lecturer} of Introduction to AVR Microcontrollers \hfill 2009-2011\\
-At Scientific Association of Electrical Engineering (Shahid Behshti University) 
+%\item {\sl Lecturer} of Introduction to AVR Microcontrollers \hfill 2009-2011\\
+%At Scientific Association of Electrical Engineering (Shahid Behshti University) 
 
-\end{itemize}
+%\end{itemize}
 
 
 
-\section{\centerline{Publications}}
+\section{\centerline{Selected Publications}}
 \vspace{15pt} % Gap between title and text
 %{\bf Conference Papers}\\
 
 \begin{itemize} \itemsep 2pt % Reduce space between items
-	
-\item {\bf Amirian, J.}, Hayet, J. B., Pettré, J., {\bf ''What we see and What we don’t see: Imputing Occluded Crowd Structures from Robot Sensing,''} International Conference on Intelligent Robots and Systems (\textbf{Preprint-2021}).
 
-\item Zhang, B., \textbf{Amirian, J.} Eberle, H., Pettr\'e, J., Holloway, C., Carlson , T. \textbf{"Towards Safe Human-Robot Interactions in Crowds: Empirical Study of Pedestrian Dynamics with a Wheelchair and a Pepper Robot."} International Journal of Social Robotics (\textbf{SORO-2021}).
+\item Gheisari, M., {\bf Amirian, J.}, Furon, T. Amsaleg, L., {\bf ''AggNet: Learning to Aggregate Faces for Group Membership Verification,''} (\textbf{Preprint-2022}).
+
+\item Zhang, B., \textbf{Amirian, J.} Eberle, H., Pettr\'e, J., Holloway, C., Carlson , T. \textbf{"Towards Safe Human-Robot Interactions in Crowds: Empirical Study of Pedestrian Dynamics with a Wheelchair and a Pepper Robot."} International Journal of Social Robotics (\textbf{SORO-2022}).
 	
+\item {\bf Amirian, J.}, Hayet, J. B., Pettré, J., {\bf ''What we see and What we don’t see: Imputing Occluded Crowd Structures from Robot Sensing,''} (\textbf{Preprint-2021}).
+
 \item {\bf Amirian, J.}, Zhang, B., Valente Castro, F., Baldelomar, J., Hayet, J. B., Pettré, J. {\bf ''OpenTraj: Assessing Prediction Complexity in Human Trajectories Datasets.''} In Proceedings of the 15th Asian Conference on Computer Vision (\textbf{ACCV-2020}), Nov-Dec. 2020.
 
 \item van Toll, W., Grzeskowiak, F., Gandía, A.L., \textbf{Amirian, J.}, Berton, F., Bruneau, J., Daniel, B.C., Jovane, A. and Pettré, J., ''\textbf{Generalized Microscropic Crowd Simulation using Costs in Velocity Space},'', In Symposium on Interactive 3D Graphics and Games (\textbf{I3D-2020}), May 2020.
@@ -152,13 +164,13 @@ At Scientific Association of Electrical Engineering (Shahid Behshti University)
 
 \item {\bf Amirian, J.}, Hayet, J. B., Pettré, J., {\bf ''Social ways: Learning multi-modal distributions of pedestrian trajectories with GANs,''} IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR-2019}) Precognition Workshop, Jul. 2019.
 
-\item (TDP) {\bf Amiryan, J.}, Raeessi, S., Payandeh, P., Nadimi, B., Nouri, N., Kamali, M. R., Nazemi, E., {\bf ''CYRUS 2016 Team Description Paper,''} 2016.
+%\item (TDP) {\bf Amiryan, J.}, Raeessi, S., Payandeh, P., Nadimi, B., Nouri, N., Kamali, M. R., Nazemi, E., {\bf ''CYRUS 2016 Team Description Paper,''} 2016.
 
 \item {\bf Amiryan, J.}, Jamzad, M., {\bf ''Adaptive motion planning with artificial potential fields using a prior path,''} 3rd RSI International Conference on Robotics and Mechatronics (\textbf{ICROM}), 2015.
 
 %\item (MSc Thesis) {\bf Amiryan, J.}, {\bf ''Dynamic Motion Planning and Obstacle Avoidance Simulation for Autonomous Robot-car in Webots,''} \textbf{MSc Thesis}, Department of Computer Engineering, Sharif University of Technology, August 2014.
 
-\item Mazloum, J., Jalali, A., {\bf Amiryan, J.}, {\bf ''A novel bidirectional neural network for face recognition,''} 2nd International eConference on Computer and Knowledge Engineering (\textbf{ICCKE}), 2012.
+%\item Mazloum, J., Jalali, A., {\bf Amiryan, J.}, {\bf ''A novel bidirectional neural network for face recognition,''} 2nd International eConference on Computer and Knowledge Engineering (\textbf{ICCKE}), 2012.
 
 %\item (BSc Project Report) {\bf J. Amiryan,} J. Kamali, {\bf ''Automatic Traffic Control System With Police Robot,''} BSc. Thesis, Department of Electrical Engineering, Shahid Beheshti University, March 2012.
 \end{itemize}
@@ -191,7 +203,7 @@ At Scientific Association of Electrical Engineering (Shahid Behshti University)
 \end{itemize}
 
 
-\section{\centerline{Skills}}
+\section{\centerline{Technical Skills}}
 \vspace{15pt}
 \begin{itemize} \itemsep -1pt
 
@@ -238,9 +250,9 @@ Department of Computer Engineering, Sharif University of Technology, Tehran, Ira
 Email: jamzad@sharif.edu
 
 
-\item   {\bf  Dr. Eslam Nazemi}\\
-Department of Electrical and Computer Engineering, Shahid Beheshti University, Tehran , Iran\\
-Email: nazemi@sbu.ac.ir
+%\item   {\bf  Dr. Eslam Nazemi}\\
+%Department of Electrical and Computer Engineering, Shahid Beheshti University, Tehran , Iran\\
+%Email: nazemi@sbu.ac.ir
 
 %\item   {\bf \href{http://facultymembers.sbu.ac.ir/eshghi/}{Dr. Mohamad Eshghi} }\\
 %Department of Electrical and Computer Engineering, Shahid Beheshti University, Tehran , Iran\\
