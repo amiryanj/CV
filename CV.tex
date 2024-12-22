@@ -1,6 +1,12 @@
 %\documentclass{article}
 \documentclass[10pt]{res}
 
+% In your preamble, right after \documentclass[10pt]{res}, for example:
+\usepackage[backend=bibtex,style=numeric,sorting=ydnt,maxbibnames=99]{biblatex}
+
+% Tell biblatex the name of your .bib file (which we'll download automatically)
+\addbibresource{publications.bib}
+
 \usepackage{helvet}
 \usepackage{hyperref}
 \usepackage{bibentry}
@@ -156,12 +162,16 @@ I developed novel algorithms to handle camera lens distortion and this contribut
 
 \hrulefill
 
-\section{\centerline{List of Publications}}
+\section{\centerline{Publications}}
 \vspace{15pt} % Gap between title and text
-%{\bf Conference Papers}\\
+
+% If you want everything from the .bib:
+\nocite{*}  % Tells LaTeX to include all entries from publications.bib
+
+% Print them in numeric order
+\printbibliography[heading=none]
 
 \begin{itemize} \itemsep 2pt % Reduce space between items
-
 
 \item Gheisari, M., {\bf Amirian, J.}, Furon, T. Amsaleg, L., {\bf ''AggNet: Learning to Aggregate Faces for Group Membership Verification,''} Signal Processing: Image Communication, 2025.
 
