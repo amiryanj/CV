@@ -5,7 +5,7 @@
 \usepackage[backend=bibtex,style=numeric,sorting=ydnt,maxbibnames=99]{biblatex}
 
 % Tell biblatex the name of your .bib file (which we'll download automatically)
-\addbibresource{publications.bib}
+\addbibresource{CV.bib}
 
 \usepackage{helvet}
 \usepackage{hyperref}
@@ -13,6 +13,7 @@
 \usepackage{csquotes}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{enumitem}
 
 \title{Javad Amirian}
 %\subtitle{Resume}
@@ -23,8 +24,8 @@
 
 \begin{document}
 
-\name{Javad Amirian\\ \\}
-\vspace{28pt}
+\name{Javad Amirian, PhD\\ \\}
+\vspace{20pt}
 
 %\section{\centerline{Contact Information}}
 
@@ -53,8 +54,60 @@ Email: amiryan.j@gmail.com \\
 % \item Crowd Simulation and Human Motion Prediction
 % \end{itemize}
 
-\hrulefill
+\section{\centerline{Professional Experience}}
+\vspace{-14pt} % Negative space between title and text
 
+\paragraph{$\bullet$ AI Research Scientist @ \href{https://stage11.com} {Stage11}} \hfill Oct. 2024 - Present\\
+At Stage11, a startup focused on developing Metaverse for concerts, I am leading the AI team to develop 3D reconstruction and rendering algorithms, especially for human avatars.
+I develop Gaussian Splatting and Neural Rendering solutions to unlock photorealistic avatars in virtual reality environments.
+\vspace{-14pt}
+
+\paragraph{$\bullet$ Postdoctoral Researcher @ \href{https://isir.upmc.fr/} {ISIR (Robotics Lab - Sorbonne University)}} \hfill Sep. 2023 - Oct. 2024\\
+As part of the euROBIN project, I focused on developing social navigation algorithms for mobile robots such as Pepper and Tiago. This included integrating Vision-Language Models (VLMs) and LLMs into the robot navigation stack using ROS, in a collaboration project with the LAAS robotic center, to advance the robots capabilities for human-aware navigation.
+\vspace{-14pt}
+
+\paragraph{$\bullet$ CTO and Head of AI @ \href{http://vivetennis.com} {Vive Robotics}} \hfill Mar. 2021 - Aug 2023\\
+As the CTO and Head of AI, I led the development of the Vive Tennis, a tennis-ball-retriever robot that utilizes advanced Computer Vision and AI algorithms to efficiently navigate on the court, locate tennis balls, and identify players. My primary responsibility was to oversee the delivery of the MVP, by setting specific objectives for each principle. I guided the AI team in developing a high-fps video processing pipeline on-the-edge that maximizes the robot's agility while ensuring cost-effective hardware solutions to maintain an affordable product price.
+\vspace{-14pt}
+
+\paragraph{$\bullet$ Co-Founder of \href{http://decorar.ai} {DecorAR} @ Inria Startup Studio} \hfill April. 2022 - Mar. 2023\\
+DecorAR is a tech project incubated at Inria Startup Studio to bring AI and Visual Recommendation to Augmented Reality environments. "\textit{Interior Design by AI}" is the first platform being developed by DecorAR and it addresses the problem of finding compatible pieces of furniture among a vast database of products from different categories and brands. As a CTO, my job was to build ML models and develop the stack to make the PoCs accessible to early testers.
+\vspace{-14pt}
+
+\paragraph{$\bullet$ Doctoral Researcher @ \href{http://inria.fr} {Inria}} (EU H2020 Project) \hfill Jan. 2018 - Jul. 2021\\
+I contributed to developing tools for \textit{Motion Prediction} of pedestrians around robots to enhance navigation in crowded environments. Leveraging GANs, I developed the models to predict multi-modal distributions of human trajectories. This work honed my expertise in ML frameworks like PyTorch and Keras, and large-scale data analysis, with significant focus on neural network training and visualization.
+\vspace{-14pt}
+
+\paragraph{$\bullet$ Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}} (Previously Sepehr) \hfill May 2015 - Dec. 2017\\
+At PixBall, I contributed in developing high-performance camera calibration and optimization algorithms, mostly in C++ and Matlab, as a computer vision engineer.
+%  accuracy in overlay placement and created systems to handle variable lens distortions at different zoom levels.
+I developed novel algorithms to handle camera lens distortion and this contributed significantly to improving the accuracy of embedding graphical overlays and virtual advertisements in sport content.
+\vspace{-6pt}
+
+% \paragraph{$\bullet$ Computer Vision Engineer @ \href{http://www.spadsystem.com/}{Spad System Co.} } \hfill Apr. 2016 - Nov. 2017\\
+% At Spad System Co., I played a key role in the \href{http://didbaan.com}{(Didbaan)} project, focusing on automatic recognition of Iranian license plates using the OpenALPR engine based on OpenCV. I utilized my expertise in computer vision and image processing to optimize and fine-tune the code for accurate detection and recognition of local license plates. Additionally, I spearheaded the data collection effort, curating a dataset of over 5,000 annotated license plate images. This highly successful implementation of Didbaan at multiple parking sites revolutionized vehicle entrance and exit management, underscoring my proficiency in computer vision and image processing.
+
+% \paragraph{$\bullet$ Founder and Team Leader @ {Cyrus}} (Students Robotics Team) \hfill Jul. 2010 - Apr. 2015\\
+% During my undergraduate studies, I co-founded \textbf{Cyrus}, an ambitious project centered around small-size soccer robots. I assembled and led a dedicated team of 5-10 students from diverse backgrounds in electrical engineering, computer engineering, and mechanical engineering. Over the course of 5 years, I guided the project's direction by conducting thorough research, designing the system architecture, and on-boarding talented students to contribute to its development. Initially, I took charge of electronic design, robot firmware, and in 2012, I transitioned to focus on AI and robot navigation and ultimately creating motion planning and control algorithms for the robots. As a notable research outcome, our team introduced a novel approach utilizing Fuzzy logic to enhance robot movements and compensate for inaccuracies in the robot hardware. Additionally, I proposed an efficient motion-planning algorithm that optimizes multiple objectives simultaneously, allowing for adaptive navigation parameters.
+
+
+%\hrulefill
+\section{\centerline{Technical Skills}}
+\vspace{15pt}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Programming Languages:} Python, C/C++, Matlab, Swift
+    \item \textbf{ML:} Pytorch, Keras (TensorFlow) | RNNs, GANs, CNNs, Transformers
+    \item \textbf{AI and Robotics Tools:} OpenCV, Nvidia Jetson, ROS, CARLA, Webots, Unity, Gazebo
+    \item \textbf{Software Development:} OOD, Concurrent and Multithread, Modular Programming
+    \item \textbf{Version Control:} Git, GitHub
+%\item \textbf{Project Management:} ClickUp, Trello
+%\item \textbf{Database:} PostgreSQL, ODB (ORM)
+%\item \textbf{Graphic Tools:} Adobe Photoshop, Adobe Premiere, 3ds Max
+\end{itemize}
+
+
+%\hrulefill
 \section{\centerline{Education}}
 \vspace{8pt} % Gap between title and text
 
@@ -100,46 +153,8 @@ Shahid Behesti University (National University of Iran), Tehran, Iran  \\
 %\vspace{8pt} % Gap between title and text
 %Machine Learning, Statistical Pattern Recognition, Computational Intelligence, Image Processing, Planning in Artificial Intelligence, Speech Processing, Stochastic Processes.
 
-\hrulefill
 
 % Main Projects
-\section{\centerline{Professional Experience}}
-\vspace{-12pt} % Negative space between title and text
-
-\paragraph{$\bullet$ AI Research Scientist @ \href{https://stage11.com} {Stage11}} \hfill Oct. 2024 - Present\\
-At Stage11, a startup focused on developing Metaverse for concerts, I am leading the AI team to develop 3D reconstruction and rendering algorithms, especially for human avatars.
-I develop Gaussian Splatting and Neural Rendering solutions to unlock photorealistic avatars in virtual reality environments.
-
-\paragraph{$\bullet$ Postdoctoral Researcher @ \href{https://isir.upmc.fr/} {ISIR (Robotics Lab - Sorbonne University)}} \hfill Sep. 2023 - Oct. 2024\\
-As part of the euROBIN project, I focused on developing social navigation algorithms for mobile robots such as Pepper and Tiago. This included integrating Vision-Language Models (VLMs) and LLMs into the robot navigation stack using ROS, in a collaboration project with the LAAS robotic center, to advance the robots capabilities for human-aware navigation.
-\vspace{-12pt}
-
-\paragraph{$\bullet$ CTO and Head of AI @ \href{http://vivetennis.com} {Vive Robotics}} \hfill Mar. 2021 - Aug 2023\\
-As the CTO and Head of AI, I led the development of the Vive Tennis, a tennis-ball-retriever robot that utilizes advanced Computer Vision and AI algorithms to efficiently navigate on the court, locate tennis balls, and identify players. My primary responsibility was to oversee the delivery of the MVP, by setting specific objectives for each principle. I guided the AI team in developing a high-fps video processing pipeline on-the-edge that maximizes the robot's agility while ensuring cost-effective hardware solutions to maintain an affordable product price.
-\vspace{-12pt}
-
-\paragraph{$\bullet$ Co-Founder of \href{http://decorar.ai} {DecorAR} @ Inria Startup Studio} \hfill April. 2022 - Mar. 2023\\
-DecorAR is a tech project incubated at Inria Startup Studio to bring AI and Visual Recommendation to Augmented Reality environments. "\textit{Interior Design by AI}" is the first platform being developed by DecorAR and it addresses the problem of finding compatible pieces of furniture among a vast database of products from different categories and brands. As a CTO, my job was to build ML models and develop the stack to make the PoCs accessible to early testers.
-\vspace{-12pt}
-
-\paragraph{$\bullet$ Doctoral Researcher @ \href{http://inria.fr} {Inria}} (EU H2020 Project) \hfill Jan. 2018 - Jul. 2021\\
-I contributed to developing tools for \textit{Motion Prediction} of pedestrians around robots to enhance navigation in crowded environments. Leveraging GANs, I developed the models to predict multi-modal distributions of human trajectories. This work honed my expertise in ML frameworks like PyTorch and Keras, and large-scale data analysis, with significant focus on neural network training and visualization.
-\vspace{-8pt}
-
-\paragraph{$\bullet$ Computer Vision Engineer @ \href{http://pixballsports.com}{PixBall}} (Previously Sepehr) \hfill May 2015 - Dec. 2017\\
-At PixBall, I contributed in developing high-performance camera calibration and optimization algorithms, mostly in C++ and Matlab, as a computer vision engineer. 
-%  accuracy in overlay placement and created systems to handle variable lens distortions at different zoom levels.
-I developed novel algorithms to handle camera lens distortion and this contributed significantly to improving the accuracy of embedding graphical overlays and virtual advertisements in sport content.
-\vspace{-12pt}
-
-% \paragraph{$\bullet$ Computer Vision Engineer @ \href{http://www.spadsystem.com/}{Spad System Co.} } \hfill Apr. 2016 - Nov. 2017\\
-% At Spad System Co., I played a key role in the \href{http://didbaan.com}{(Didbaan)} project, focusing on automatic recognition of Iranian license plates using the OpenALPR engine based on OpenCV. I utilized my expertise in computer vision and image processing to optimize and fine-tune the code for accurate detection and recognition of local license plates. Additionally, I spearheaded the data collection effort, curating a dataset of over 5,000 annotated license plate images. This highly successful implementation of Didbaan at multiple parking sites revolutionized vehicle entrance and exit management, underscoring my proficiency in computer vision and image processing.
-
-
-
-% \paragraph{$\bullet$ Founder and Team Leader @ {Cyrus}} (Students Robotics Team) \hfill Jul. 2010 - Apr. 2015\\
-% During my undergraduate studies, I co-founded \textbf{Cyrus}, an ambitious project centered around small-size soccer robots. I assembled and led a dedicated team of 5-10 students from diverse backgrounds in electrical engineering, computer engineering, and mechanical engineering. Over the course of 5 years, I guided the project's direction by conducting thorough research, designing the system architecture, and on-boarding talented students to contribute to its development. Initially, I took charge of electronic design, robot firmware, and in 2012, I transitioned to focus on AI and robot navigation and ultimately creating motion planning and control algorithms for the robots. As a notable research outcome, our team introduced a novel approach utilizing Fuzzy logic to enhance robot movements and compensate for inaccuracies in the robot hardware. Additionally, I proposed an efficient motion-planning algorithm that optimizes multiple objectives simultaneously, allowing for adaptive navigation parameters.
-
 
 
 %\section{\centerline{Work Experience}}
@@ -161,18 +176,18 @@ I developed novel algorithms to handle camera lens distortion and this contribut
 
 %\end{itemize}
 
-\hrulefill
+%\hrulefill
 
 \section{\centerline{Publications}}
 \vspace{15pt} % Gap between title and text
 
 % If you want everything from the .bib:
-\nocite{*}  % Tells LaTeX to include all entries from publications.bib
+%\nocite{*}  % Tells LaTeX to include all entries from CV.bib
 
 % Print them in numeric order
 \printbibliography[heading=none]
 
-\begin{itemize} \itemsep 2pt % Reduce space between items
+\begin{itemize}[leftmargin=*, itemsep=2pt]
 
 \item Gheisari, M., {\bf Amirian, J.}, Furon, T. Amsaleg, L., {\bf ''AggNet: Learning to Aggregate Faces for Group Membership Verification,''} Signal Processing: Image Communication, 2025.
 
@@ -230,20 +245,7 @@ I developed novel algorithms to handle camera lens distortion and this contribut
 %
 %\end{itemize}
 
-\hrulefill
 
-\section{\centerline{Technical Skills}}
-%\vspace{15pt}
-\begin{itemize}[left=0pt,label={}]
-    \item \textbf{Programming Languages:} Python, C/C++, Matlab, Swift
-    \item \textbf{Deep Learning:} Pytorch, Keras (TensorFlow) | RNNs, GANs, CNNs
-    \item \textbf{Version Control:} Git, GitHub
-    \item \textbf{AI and Robotics Tools:} OpenCV, Nvidia Jetson, ROS, CARLA, Webots, Unity, Gazebo
-    \item \textbf{Software Development:} OOD, Concurrent and Multithread, Modular Programming
-%\item \textbf{Project Management:} ClickUp, Trello
-%\item \textbf{Database:} PostgreSQL, ODB (ORM)
-%\item \textbf{Graphic Tools:} Adobe Photoshop, Adobe Premiere, 3ds Max
-\end{itemize}
 
 %
 %\begin{itemize} \itemsep 1pt
@@ -276,8 +278,10 @@ I developed novel algorithms to handle camera lens distortion and this contribut
 
 % \end{itemize}
 
-\hrulefill
+%\hrulefill
 
+% page break
+\newpage
 \section{\centerline{References}}
 
 
@@ -317,5 +321,6 @@ Email: jbhayet@cimat.mx
 
 \end{resume}
 
+%\printbibliography[heading=none]
 
 \end{document}
