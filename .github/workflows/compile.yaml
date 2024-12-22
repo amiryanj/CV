@@ -20,7 +20,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: CV.tex 
-          latexmk_args: -pdf
+          latexmk_args: -pdf -bibtex
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
